@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@500;600&display=swap');
+
+:root{
+    --cor-principal: #000;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #22D4FD;
+
+    --fonte-principal: 'Montserrat';
+    --fonte-secundaria: 'Krona One';
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: var(--cor-principal);
+    color: var(--cor-secundaria);
+}
+
+
+.header__navigation{
+    padding: 2% 0 0 15%;
+    display: flex;
+    gap: 80px;
+}
+
+.header__navigation__link{
+    color: var(--cor-terciaria);
+    text-decoration: none;
+    font-family: var(--fonte-principal);
+    font-size: 1.5rem;
+}
+
+.destaque-titulo{
+    color: var(--cor-terciaria)
+}
+
+.container{
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.container__content{
+    width: 50%;
+    display:flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.container__content__title{
+    font-size: 2.25rem;
+    font-family: 'Krona One';
+}
+
+.container__content__text{
+    font-size: 1.5rem;
+    font-family: var(--fonte-principal);
+}
+
+.container__content__text2{
+    font-size: 1rem;
+    font-family: var(--fonte-principal);
+}
+
+.container__content__links{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.container__content__links__subtitle{
+    font-family: 'Krona One';
+    font-size: 1.5rem;
+}
+
+.container__content__link__links{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background-color: var(--cor-principal);
+    color: var(--cor-secundaria);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    padding: 21.5px  0px;
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+    text-decoration: none;
+    border: 2px solid var(--cor-terciaria);
+}
+
+.container__content__link__links img{
+    width: 30px;
+}
+
+.container__content__link__links:hover{
+    background-color: #272727;
+}
+
+.container__image{
+    width: 50%;
+}
+
+.foot{
+    color: var(--cor-principal);
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: var(--fonte-principal);
+}
+
+@media (max-width: 1200px){
+    .header__navigation{
+        padding: 10%;
+        justify-content: center;
+    }
+    
+    .container{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .container__content
+    {
+        width: auto;
+    }
+
+    .container__image{
+        width: 80%;
+    }
+
+}
